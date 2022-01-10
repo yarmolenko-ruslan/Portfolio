@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,300&display=swap");
 html {
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -10,12 +11,19 @@ html {
 }
 
 body {
+  height: 100%;
   color: #333333;
   font-family: "Open Sans", sans-serif;
 }
 
 body._lock {
   overflow: hidden;
+}
+
+.content__wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
@@ -27,6 +35,12 @@ a {
   margin: 0 auto;
   max-width: 1200px;
   padding: 0 15px;
+}
+
+.header__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo {
@@ -49,6 +63,7 @@ a {
   background-repeat: no-repeat;
   background-position: center top;
   background-size: cover;
+  min-height: 100vh;
 }
 .header__top {
   display: flex;
@@ -640,10 +655,6 @@ a {
   .logo {
     position: relative;
     z-index: 5;
-  }
-
-  ._lock {
-    overflow: hidden;
   }
 
   .menu__icon {
