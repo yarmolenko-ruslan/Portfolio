@@ -101,11 +101,11 @@
       </section>
       <section class="skills page__skills">
         <div class="container">
-          <div class="section-title">
+          <h3 class="section-title">
             Навыки
-          </div>
+          </h3>
           <div class="skills__inner">
-            <img class="skills__photo" src="img/skills-photo.jpg" alt="Моя фотография">
+            <img class="skills__photo" src="img/skills-photo.jpg" alt="Моя фотография" width="415" height="450">
             <div class="skills__box">
               <div class="skills__progress">
                 <div class="skills__progress-title">
@@ -133,15 +133,16 @@
               </div>
             </div>
           </div>
+        </div>
       </section>
       <section class="services page__services">
         <div class="container">
-          <div class="section-title">
+          <h3 class="section-title">
             Услуги
-          </div>
+          </h3>
           <div class="services__inner">
             <div class="services__item">
-              <img class="services__item-icon" src="img/svgicons/services/item-1.svg" alt="Скобки">
+              <img class="services__item-icon" src="img/svgicons/item-1.svg" alt="Скобки" width="60" height="60">
               <div class="services__item-title">
                 Вёрстка проектов
               </div>
@@ -150,7 +151,7 @@
               </div>
             </div>
             <div class="services__item">
-              <img class="services__item-icon" src="img/svgicons/services/item-2.svg" alt="Шестеренка">
+              <img class="services__item-icon" src="img/svgicons/item-2.svg" alt="Шестеренка" width="60" height="60">
               <div class="services__item-title">
                 Посадка на CMS
               </div>
@@ -159,7 +160,7 @@
               </div>
             </div>
             <div class="services__item">
-              <img class="services__item-icon" src="img/svgicons/services/item-3.svg" alt="Диалоги">
+              <img class="services__item-icon" src="img/svgicons/item-3.svg" alt="Диалоги" width="60" height="60">
               <div class="services__item-title">
                 Поддержка сайта
               </div>
@@ -173,9 +174,9 @@
       <section class="works page__works">
         <div class="container">
           <div class="works__inner">
-            <div class="section-title">
+            <h3 class="section-title">
               Мои работы
-            </div>
+            </h3>
             <div class="works__btn">
               <button type="button" data-filter="all">
                 Все работы
@@ -217,7 +218,7 @@
           </h3>
           <div class="reviews__inner">
             <div class="reviews__box">
-              <img class="reviews__box-img" src="img/reviews/photo.png" alt="Аватар клиента">
+              <img class="reviews__box-img" src="img/reviews/photo.png" alt="Аватар клиента" width="130" height="130">
               <div class="reviews__box-name">
                 Марк Цукерберг
               </div>
@@ -228,7 +229,7 @@
               </p>
             </div>
             <a class="reviews__video" href="#">
-              <img class="reviews__video-bg" src="img/reviews/video-bg.jpg" alt="Видео">
+              <img class="reviews__video-bg" src="img/reviews/video-bg.jpg" alt="Видео" width="570" height="400">
             </a>
           </div>
         </div>
@@ -237,7 +238,7 @@
         <div class="container">
           <div class="results__inner">
             <div class="results__item">
-              <img class="results__item-icon" src="img/svgicons/results/works.svg" alt="Портфель выполненных работ">
+              <img class="results__item-icon" src="img/svgicons/works.svg" alt="Портфель выполненных работ" width="98" height="80">
               <div class="results__item-text">
                 Выполненных работ
               </div>
@@ -246,7 +247,7 @@
               </div>
             </div>
             <div class="results__item">
-              <img class="results__item-icon" src="img/svgicons/results/clients.svg" alt="Довольные клиенты">
+              <img class="results__item-icon" src="img/svgicons/clients.svg" alt="Довольные клиенты" width="92" height="80">
               <div class="results__item-text">
                 Довольных клиентов
               </div>
@@ -255,7 +256,7 @@
               </div>
             </div>
             <div class="results__item">
-              <img class="results__item-icon" src="img/svgicons/results/coffee.svg" alt="Чашка кофе">
+              <img class="results__item-icon" src="img/svgicons/coffee.svg" alt="Чашка кофе" width="80" height="80">
               <div class="results__item-text">
                 Выпито чашек кофе
               </div>
@@ -264,7 +265,7 @@
               </div>
             </div>
             <div class="results__item">
-              <img class="results__item-icon" src="img/svgicons/results/review.svg" alt="Отзывы клиентов">
+              <img class="results__item-icon" src="img/svgicons/review.svg" alt="Отзывы клиентов" width="81" height="80">
               <div class="results__item-text">
                 Всего отзывов
               </div>
@@ -277,9 +278,9 @@
       </div>
       <section class="contact page__contact">
         <div class="container">
-          <div class="section-title">
+          <h3 class="section-title">
             Контакты
-          </div>
+          </h3>
           <div class="contact__inner">
             <ul class="contact__inner-list">
               <li class="contact__list-text">
@@ -338,22 +339,22 @@
             <form class="contact__inner-form">
               <div class="form-box">
                 <div class="form-box__item">
-                  <div class="form-title">
+                  <label class="form-title" for="input-name">
                     Ваше имя
-                  </div>
-                  <input class="item-input" type="text" placeholder="Иван">
+                  </label>
+                  <input class="item-input" id="input-name" name="your-name" type="text" placeholder="Иван" required>
                 </div>
                 <div class="form-box__item">
-                  <div class="form-title">
+                  <label class="form-title" for="input-number">
                     Номер телефона
-                  </div>
-                  <input class="item-input" type="tel" placeholder="+380501111111">
+                  </label>
+                  <input class="item-input" id="input-number" name="your-number" type="tel" placeholder="+380501111111" required>
                 </div>
               </div>
-              <div class="form-title">
+              <label class="form-title" for="textarea-message">
                 Ваше сообщение
-              </div>
-              <textarea class="form-message" placeholder="Текст вашего сообщения"></textarea>
+              </label>
+              <textarea class="form-message" id="textarea-message" name="comment" placeholder="Текст вашего сообщения" required></textarea>
               <button class="form-btn" type="submit">
                 Отправить
               </button>
