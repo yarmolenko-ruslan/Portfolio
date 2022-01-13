@@ -70,7 +70,7 @@ a {
 }
 .logo:hover svg path {
   fill: rgba(255, 255, 255, 0.7);
-  transition: all 0.5s;
+  transition: fill 0.5s;
 }
 .logo:active svg path {
   fill: rgba(255, 255, 255, 0.5);
@@ -155,7 +155,6 @@ a {
   font-size: 18px;
   line-height: 1.28;
   font-weight: 600;
-  transition: all 0.5s;
   border: 2px solid transparent;
 }
 .menu__list-link:hover {
@@ -291,12 +290,12 @@ a {
   font-weight: 600;
   cursor: pointer;
   border: 1px solid transparent;
+  transition: color 0.3s;
 }
 .works__inner-btn:hover {
   background-color: #fff;
   border: 1px solid #2352DE;
   color: #2352DE;
-  transition: all 0.3s;
 }
 .works__inner-btn:focus {
   border: 3px solid rgba(35, 82, 222, 0.5);
@@ -398,7 +397,6 @@ a {
   width: 100%;
   height: 100%;
   position: absolute;
-  transition: all 0.5s;
   top: 0;
   left: 0;
 }
@@ -579,6 +577,7 @@ a {
   line-height: 1.28;
   cursor: pointer;
   transition: all 0.3s;
+  border: 1px solid transparent;
 }
 .form-btn:hover {
   color: #2352DE;
@@ -616,19 +615,11 @@ a {
   .results__item {
     margin: 0 7px 20px;
   }
-}
-@media (max-width: 1140px) {
-  /* ----------- 1140px --------- */
-  .skills__progress-html, .skills__progress-css, .skills__progress-js {
-    width: 400px;
-  }
 
   .contact__inner-form {
     margin-left: 10px;
   }
-}
-@media (max-width: 1000px) {
-  /* ----------- 1000px --------- */
+
   .reviews__inner {
     align-items: center;
   }
@@ -641,9 +632,10 @@ a {
   .reviews__video-bg {
     width: 470px;
   }
-}
-@media (max-width: 930px) {
-  /* ----------- 930px --------- */
+
+  .skills__inner {
+    justify-content: space-around;
+  }
   .skills__progress-html, .skills__progress-css, .skills__progress-js {
     width: 300px;
   }
@@ -679,6 +671,20 @@ a {
     z-index: 5;
   }
 
+  .menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #7792E0;
+    transition: left 0.3s;
+    overflow: auto;
+    z-index: 1;
+  }
+  .menu._active {
+    left: 0;
+  }
   .menu__icon {
     z-index: 5;
     display: block;
@@ -719,21 +725,6 @@ a {
     top: 50%;
     transform: scale(1) translate(0px, -50%);
   }
-
-  .menu {
-    position: fixed;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background-color: #7792E0;
-    transition: left 0.3s;
-    overflow: auto;
-    z-index: 1;
-  }
-  .menu._active {
-    left: 0;
-  }
   .menu__list {
     display: block;
     text-align: center;
@@ -772,6 +763,19 @@ a {
     margin-top: 24px;
   }
 
+  .works {
+    margin: 61px 0;
+  }
+  .works__box {
+    margin-bottom: 15px;
+  }
+  .works__box-link {
+    width: 250px;
+    height: 250px;
+  }
+  .works__box-link + .works__box-link {
+    margin-bottom: 15px;
+  }
   .works__btn {
     display: flex;
     flex-direction: column;
@@ -797,16 +801,7 @@ a {
   .contact__inner-list {
     margin-bottom: 35px;
   }
-}
-@media (max-width: 800px) {
-  /* ----------- 800px --------- */
-  .works__box-link {
-    width: 300px;
-    height: 300px;
-  }
-}
-@media (max-width: 690px) {
-  /* ----------- 690px --------- */
+
   .services {
     margin: 50px 0;
   }
@@ -825,28 +820,25 @@ a {
   .services__item + .services__item {
     margin-top: 30px;
   }
-
-  .works {
-    margin: 61px 0;
-  }
-  .works__box {
-    margin-bottom: 15px;
-  }
-  .works__box-link {
-    width: 250px;
-    height: 250px;
-  }
-  .works__box-link + .works__box-link {
-    margin-bottom: 15px;
-  }
 }
 @media (max-width: 670px) {
   /* ----------- 670px --------- */
+  .header {
+    margin-bottom: 0;
+  }
   .header__top {
     margin-bottom: 233px;
+    padding-top: 12px;
+  }
+  .header__top .logo {
+    width: 115px;
+    height: 42px;
+  }
+  .header__top .logo svg {
+    width: 110px;
+    height: 36px;
   }
   .header__box {
-    margin-bottom: 47px;
     padding-bottom: 47px;
   }
   .header__box-btn {
@@ -861,11 +853,11 @@ a {
     margin-bottom: 170px;
   }
   .header__bottom-text {
-    font-size: 38px;
+    font-size: 28px;
     margin-bottom: 4px;
   }
   .header__bottom-title {
-    font-size: 80px;
+    font-size: 60px;
   }
 
   .section-title {
@@ -873,6 +865,9 @@ a {
     font-size: 28px;
   }
 
+  .about {
+    margin-bottom: 50px;
+  }
   .about__inner {
     margin: 50px 0;
   }
@@ -888,6 +883,14 @@ a {
     font-size: 20px;
   }
 
+  .works__box-link {
+    width: 225px;
+    height: 225px;
+    margin: 0;
+  }
+  .works__box-link:nth-child(even) {
+    margin-left: 14px;
+  }
   .works__btn {
     margin-bottom: 26px;
   }
@@ -899,6 +902,18 @@ a {
     padding: 39px 0 49px;
     margin-bottom: 50px;
     position: relative;
+  }
+  .reviews__box-img {
+    margin-bottom: 26px;
+  }
+  .reviews__box-name {
+    font-size: 20px;
+    padding-right: 0px;
+    margin-bottom: 18px;
+  }
+  .reviews__box-text {
+    font-size: 16px;
+    padding: 0 35px;
   }
   .reviews__video {
     height: 66px;
@@ -962,26 +977,15 @@ a {
   .contact {
     margin-bottom: 50px;
   }
-}
-@media (max-width: 580px) {
-  /* ----------- 580px --------- */
-  .header__top {
-    padding-top: 12px;
+  .contact__inner-list {
+    margin-bottom: 32px;
   }
-  .header__top .logo {
-    width: 115px;
-    height: 42px;
+  .contact__inner-form {
+    margin-left: 0;
+    width: 100%;
   }
-  .header__top .logo svg {
-    width: 110px;
-    height: 36px;
-  }
-
-  .header__bottom-title {
-    font-size: 60px;
-  }
-  .header__bottom-text {
-    font-size: 28px;
+  .contact__list-email {
+    margin-bottom: 27px;
   }
 
   .skills {
@@ -998,39 +1002,6 @@ a {
   }
   .skills__progress + .skills__progress {
     margin-top: 24px;
-  }
-
-  .works__box-link {
-    width: 225px;
-    height: 225px;
-    margin: 0;
-  }
-  .works__box-link:nth-child(even) {
-    margin-left: 14px;
-  }
-
-  .reviews__box-img {
-    margin-bottom: 26px;
-  }
-  .reviews__box-name {
-    font-size: 20px;
-    padding-right: 0px;
-    margin-bottom: 18px;
-  }
-  .reviews__box-text {
-    font-size: 16px;
-    padding: 0 35px;
-  }
-
-  .contact__inner-list {
-    margin-bottom: 32px;
-  }
-  .contact__inner-form {
-    margin-left: 0;
-    width: 100%;
-  }
-  .contact__list-email {
-    margin-bottom: 27px;
   }
 
   .form-box {
@@ -1061,12 +1032,6 @@ a {
   }
 }
 @media (max-width: 500px) {
-  .works__box-link {
-    width: 200px;
-    height: 200px;
-  }
-}
-@media (max-width: 440px) {
   .header__bottom-title {
     font-size: 40px;
   }
