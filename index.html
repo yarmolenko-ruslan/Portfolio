@@ -4,25 +4,24 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" href="img/icons/favicon.svg">
-  <link rel="stylesheet" href="files/reset.css?_v=20220218205627">
-  <link rel="stylesheet" href="css/style.min.css?_v=20220218205627">
-  <title>Портфолио Ивана Иванова | Главная страница</title>
+  <link rel="icon" href="img/icons/favicon.png">
+  <link rel="stylesheet" href="files/reset.css?_v=20220322191041">
+  <link rel="stylesheet" href="css/style.min.css?_v=20220322191041">
+  <title>Портфолио Руслана Ярмоленко | Главная страница</title>
 </head>
 
 <body>
 
   <header class="header" style="background-image: url(img/header-bg.jpg);">
   <div class="container">
-    <div class="header__wrapper">
       <div class="header__top" id="myHeader">
-        <button class="menu__icon" type="button" href="#">
+        <button class="menu-icon" type="button" href="#">
           <span></span>
           <span class="sr-only">Открыть меню</span>
         </button>
         <nav class="menu">
           <a class="logo" href="index.html">
-            <img class="logo__img" src="img/icons/logo.svg" alt="Логотип сайта">
+            <picture><source srcset="img/logo.webp" type="image/webp"><img class="logo__img" src="img/logo.png" alt="Логотип сайта" width="100" height="100"></picture>
           </a>
           <ul class="menu__list">
             <li class="menu__item">
@@ -31,13 +30,13 @@
               </a>
             </li>
             <li class="menu__item">
-              <a class="menu__link" href="" data-goto=".skills">
+              <a class="menu__link" href="#" data-goto=".skills">
                 Навыки
               </a>
             </li>
             <li class="menu__item">
               <a class="menu__link" href="#" data-goto=".services">
-                Услуги
+                Продвижение
               </a>
             </li>
             <li class="menu__item">
@@ -45,11 +44,11 @@
                 Портфолио
               </a>
             </li>
-            <li class="menu__item">
+            <!-- <li class="menu__item">
               <a class="menu__link" href="#" data-goto=".reviews">
                 Отзывы
               </a>
-            </li>
+            </li> -->
             <li class="menu__item">
               <a class="menu__link" href="#" data-goto=".contact">
                 Контакты
@@ -58,15 +57,16 @@
           </ul>
         </nav>
       </div>
-    </div>
+
     <div class="header__bottom">
       <h1 class="header__title">
-        Привет, я Иван Иванов
+        Привет, я Руслан Ярмоленко
         <span class="header__text">
           frontend-разработчик
         </span>
       </h1>
-      <a class="header__btn" href="#">
+      
+      <a class="header__btn" href="#" data-goto=".works">
         смотреть работы
       </a>
     </div>
@@ -82,16 +82,16 @@
     </h2>
     <div class="about__content">
       <p>
-        Приветствую всех на своём сайте! Меня зовут Иван, я из Киева. Занимаюсь фронтенд-разработкой более года.
-        До
-        разработки занимался нелюбимым делом, ходил на нелюбимую работу, не мог понять за что взяться, чтобы дело
-        приносило удовольствие и деньги, пока не наткнулся на один интересный курс.
+        Приветствую всех на своём сайте! Меня зовут Руслан, я из Красноярска. Начал заниматься frontend разработкой примерно пол года назад.
+        До разработки занимался нелюбимым делом, работал в различных сферах, в основном в продажах. Работал менеджером по продажам, продавцом в магазине стройматериалов и т.д.
       </p>
       <p>
-        С тех пор прошел огонь, воду и медные трубы. Учёба давалась по-разному: где-то легче, где-то сложнее.
-        Каждодневная работа над навыками и усердие, с которым я подходил к обучению, уже через несколько месяцев
-        принесли плоды - я взял первый заказ на фрилансе. С отзывами клиентов и примерами работ можно ознакомиться
-        ниже.
+        С тех пор начал искать дело своей жизни, которое бы приносило мне удовольствие, счастье и конечно же обеспечивало мою семью. С раннего детства интересовался компьютерной и мобильной техникой. Изучал различное програмное обеспечение и перебирал компьютерные железки. После осознания, что прошлые работы мне не приносили счастья, я понял, что нужно искать работу в сфере IT.   
+      </p>
+      <p>
+        Учился в основном сам, прошел курсы под названием "From 0 to 1" с однаименного YouTube канала, которые дали небольшую начальную базу знаний и толчок в нужном направлении. Учеба давалась нелегко, но я справился и успешно закончил данные курсы.
+        Коммерческой разработкой на данный момент не занимался, разрабатывал сайты для себя и своего портфолио.
+        С работами разработанными мной можете ознакомиться ниже.
       </p>
     </div>
   </div>
@@ -137,7 +137,7 @@
     <section class="services section">
   <div class="container">
     <h2 class="title">
-      Услуги
+      Изучаю сейчас
     </h2>
     <ul class="services__inner">
 
@@ -146,25 +146,25 @@
           Вёрстка проектов
         </h3>
         <p class="services__text">
-          Сделаю качественную вёрстку вашего проекта по предоставленному макету или примеру
+          Верстаю различные шаблоны сайтов, набираясь опыта семантической верстки, применение доступности, использую бэм методологию
         </p>
       </li>
 
       <li class="services__item services__item--cms">
         <h3 class="services__title">
-          Посадка на CMS
+          Java Script
         </h3>
         <p class="services__text">
-          Интегрирую ваш проект в одну из популярных CMS
+          Учу чистый JS и его взаимодействии с различными элементами на сайте
         </p>
       </li>
 
       <li class="services__item services__item--site">
         <h3 class="services__title">
-          Поддержка сайта
+          jQuery
         </h3>
         <p class="services__text">
-          Гарантирую поддержку вашего сайта на протяжениии 30 дней после сдача проекта
+          Пробую устанавливать различные JQuery плагина на сайты, после чего модернизирую их визуальную составляющую сайта
         </p>
       </li>
 
@@ -204,32 +204,13 @@
     <ul class="works__wrapper">
       <li class="mix lending works__box">
         <a href="#" class="works__link">
-          <picture><source srcset="img/works/works-item1.webp" type="image/webp"><img class="works__img" src="img/works/works-item1.jpg" width="360" height="360" alt="Работа номер 1"></picture>
+          <picture><source srcset="img/works/project-one.webp" type="image/webp"><img class="works__img" src="img/works/project-one.jpg" width="360" height="360" alt="Работа номер 1"></picture>
         </a>
       </li>
       <li class="mix corporating works__box">
         <a href="#" class="works__link">
-          <picture><source srcset="img/works/works-item2.webp" type="image/webp"><img class="works__img" src="img/works/works-item2.jpg" width="360" height="360" alt="Работа номер 2"></picture>
-        </a>
-      </li>
-      <li class="mix lending works__box">
-        <a href="#" class="works__link">
-          <picture><source srcset="img/works/works-item3.webp" type="image/webp"><img class="works__img" src="img/works/works-item3.jpg" width="360" height="360" alt="Работа номер 3"></picture>
-        </a>
-      </li>
-      <li class="mix corporating works__box">
-        <a href="#" class="works__link">
-          <picture><source srcset="img/works/works-item4.webp" type="image/webp"><img class="works__img" src="img/works/works-item4.jpg" width="360" height="360" alt="Работа номер 4"></picture>
-        </a>
-      </li>
-      <li class="mix commerce works__box">
-        <a href="#" class="works__link">
-          <picture><source srcset="img/works/works-item5.webp" type="image/webp"><img class="works__img" src="img/works/works-item5.jpg" width="360" height="360" alt="Работа номер 5"></picture>
-        </a>
-      </li>
-      <li class="mix commerce works__box">
-        <a href="#" class="works__link">
-          <picture><source srcset="img/works/works-item6.webp" type="image/webp"><img class="works__img" src="img/works/works-item6.jpg" width="360" height="360" alt="Работа номер 6"></picture>
+          
+          <picture><source srcset="img/works/project-two.webp" type="image/webp"><img class="works__img" src="img/works/project-two.jpg" width="360" height="360" alt="Работа номер 2"></picture>
         </a>
       </li>
     </ul>
@@ -240,7 +221,7 @@
   </div>
 </section>
 
-    <section class="reviews section">
+    <!-- <section class="reviews section">
   <div class="container">
     <h2 class="title title--center underline">
       Отзывы клиентов
@@ -264,7 +245,7 @@
       </a>
     </div>
   </div>
-</section>
+</section> -->
 
     <div class="results section">
   <div class="container">
@@ -274,7 +255,7 @@
         <p class="results__text">
           Выполненных работ
           <span class="results__quantity">
-            56
+            2
           </span>
         </p>
       </li>
@@ -290,7 +271,7 @@
         <p class="results__text">
           Выпито чашек кофе
           <span class="results__quantity">
-            477
+            21
           </span>
         </p>
       </li>
@@ -298,7 +279,7 @@
         <p class="results__text">
           Всего отзывов
           <span class="results__quantity results__quantity--padding">
-            48
+            1
           </span>
         </p>
       </li>
@@ -308,45 +289,55 @@
 
     <section class="contact">
   <div class="container">
-    <h2 class="title">
-      Контакты
-    </h2>
+    <h2 class="title">Контакты</h2>
     <div class="contact__inner">
-
       <address class="contact__box">
         <p>
-          Связаться со мной можно, воспользовавшись контактной формой, или напрямую по номеру телефона, email, в
-          соцсетях:
+          Связаться со мной можно, воспользовавшись контактной формой
+          <span>(пока форма недоступна)</span>, или напрямую по номеру телефона,
+          email, в соцсетях:
         </p>
         <ul class="contact__list">
           <li class="contact__item">
-            <a class="contact__link" href="tel:+380501111111">
-              +38 (050) 111 11 11
+            <a class="contact__link" href="tel:+79082110721">
+              +7 (908) 211-07-21
             </a>
           </li>
           <li class="contact__item">
-            <a class="contact__link" href="mailto:frontend-monster@email.com">
-              frontend-monster@email.com
+            <a class="contact__link" href="mailto:yarm.rus@yandex.ru">
+              yarm.rus@yandex.ru
             </a>
           </li>
         </ul>
 
         <ul class="social">
           <li class="social__item">
-            <a class="social__link" href="https://www.instagram.com/"
-              style="background-image: url(img/icons/instagram.svg);" target="_blank">
+            <a
+              class="social__link"
+              href="https://www.instagram.com/"
+              style="background-image: url(img/icons/inst.svg)"
+              target="_blank"
+            >
               <span class="sr-only">Инстаграм</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://www.facebook.com/"
-              style="background-image: url(img/icons/facebook.svg);" target="_blank">
-              <span class="sr-only">Фейсбук</span>
+            <a
+              class="social__link"
+              href="https://vk.com/alfonco"
+              style="background-image: url(img/icons/vk.svg)"
+              target="_blank"
+            >
+              <span class="sr-only">Вконтакте</span>
             </a>
           </li>
           <li class="social__item">
-            <a class="social__link" href="https://telegram.org/"
-              style="background-image: url(img/icons/telegram.svg);" target="_blank">
+            <a
+              class="social__link"
+              href="https://telegram.org/"
+              style="background-image: url(img/icons/teleg.svg)"
+              target="_blank"
+            >
               <span class="sr-only">Телеграм</span>
             </a>
           </li>
@@ -356,43 +347,56 @@
       <form class="form">
         <div class="form__row">
           <div class="form__item">
-            <label class="form__label" for="input-name">
-              Ваше имя
-            </label>
-            <input class="form__input" id="input-name" name="your-name" type="text" placeholder="Иван" required>
+            <label class="form__label" for="input-name"> Ваше имя </label>
+            <input
+              class="form__input"
+              id="input-name"
+              name="your-name"
+              type="text"
+              placeholder="Иван"
+              required
+            />
           </div>
           <div class="form__item">
             <label class="form__label" for="input-number">
               Номер телефона
             </label>
-            <input class="form__input" id="input-number" name="your-number" type="tel" placeholder="+380501111111"
-              required>
+            <input
+              class="form__input"
+              id="input-number"
+              name="your-number"
+              type="tel"
+              placeholder="+380501111111"
+              required
+            />
           </div>
         </div>
-        <label class="form__label" for="message">
-          Ваше сообщение
-        </label>
-        <textarea class="form__input form__input--textarea" name="comment" id="message"
-          placeholder="Текст вашего сообщения"></textarea>
-        <button class="btn" type="submit">
-          Отправить
-        </button>
+        <label class="form__label" for="message"> Ваше сообщение </label>
+        <textarea
+          class="form__input form__input--textarea"
+          name="comment"
+          id="message"
+          required
+          placeholder="Текст вашего сообщения"
+        ></textarea>
+        <button class="btn" type="submit">Отправить</button>
       </form>
     </div>
   </div>
-</section> 
+</section>
+ 
 
   </main>
 
   <footer class="footer">
   <a class="logo" href="index.html">
-    <img class="logo__img" src="img/icons/logo.svg" alt="Логотип сайта">
+    <picture><source srcset="img/logo.webp" type="image/webp"><img class="logo__img" src="img/logo.png" alt="Логотип сайта" width="100" height="100"></picture>
   </a>
 </footer>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20220218205627"></script>
-  <script src="files/mixitup.min.js?_v=20220218205627"></script>
-  <script src="js/app.min.js?_v=20220218205627"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js?_v=20220322191041"></script>
+  <script src="files/mixitup.min.js?_v=20220322191041"></script>
+  <script src="js/app.min.js?_v=20220322191041"></script>
 </body>
 
 </html>
