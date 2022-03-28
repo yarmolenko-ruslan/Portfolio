@@ -779,6 +779,10 @@ body._lock {
   max-width: 531px;
 }
 
+.contact__box span {
+  color: #2352DE;
+}
+
 .contact__list {
   margin-bottom: 21px;
 }
@@ -832,6 +836,9 @@ body._lock {
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
   transition: all 0.5s;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .social__link:hover {
